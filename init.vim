@@ -176,5 +176,13 @@ Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-" All of your Plugins must be added before the following line
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+set laststatus=2  "永远显示状态栏
+let g:airline#extensions#tabline#enabled = 1           " 自动显示全部buffers
+let g:airline_powerline_fonts = 1                      " 支持powerline字体
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+
 call plug#end()
